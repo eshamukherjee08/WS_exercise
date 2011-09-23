@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>exercise_Picture_style</title>
-	<script type="text/javascript" src="display2.js">
+	<script type="text/javascript" src="display.js">
 	</script>
 	<style type = "text/css">
 	*
@@ -56,59 +56,28 @@
 	}  
 	</style>
 </head>
-<body>
- <div class = "divmain" id = "divmain">
-	<div class = "divstore" id = "div1">                               <!-- for image 1-->
-		<div class = "dimg">
-			<img src = "img1.jpg" class = "imag" id = "dimg1"/>
+<body onLoad="esha.displayImg()">
+ <div class="divmain" id="divmain">
+	<div class="divstore" id="div1">                   <!-- for image 1-->
+		<div class="dimg">
+			<img src="img1.jpg" class="imag" id="dimg1"/>
 		</div>
-		<input type = "button" class = "img" name = "remove1" value = "REMOVE" onClick = "removeImg(this)"/>
+		<input type="button" class="img" name="remove1" value="REMOVE" onClick="esha.removeImg(this)"/>
 	</div>
-	<div class = "divstore" id = "div2">                               <!-- for image 2-->
-		<div class = "dimg" >
-			<img src = "img2.jpg" class = "imag" id = "dimg2"/>
+	<div class="divstore" id="div2">                   <!-- for image 2-->
+		<div class="dimg" >
+			<img src="img2.jpg" class="imag" id="dimg2"/>
 		</div>
-		<input type = "button" class = "img" name = "remove2" value = "REMOVE" onClick = "removeImg(this)"/>
+		<input type="button" class="img" name="remove2" value="REMOVE" onClick="esha.removeImg(this)"/>
 	</div>
-	<div class = "divstore" id = "div3">                               <!-- for image 3-->
+	<div class="divstore" id="div3">                  <!-- for image 3-->
 		<div class = "dimg">
-			<img src = "img3.jpg" class = "imag" id = "dimg3"/>
+			<img src="img3.jpg" class="imag" id="dimg3"/>
 		</div>
-		<input type = "button" class = "img" name = "remove3" value = "REMOVE" onClick = "removeImg(this)"/>
+		<input type="button" class="img" name="remove3" value="REMOVE" onClick="esha.removeImg(this)"/>
 	</div>
  </div>
- <div class = "divfoot" id = "divfoot">
-	<div  class = "dimg" id = "i4">
-	<img src = "img4.jpg" class = "imag" id = "img4"/>
-	</div>
-	<div  class = "dimg" id = "i5">
-	<img src = "img5.jpg" class = "imag" id = "img5"/>
-	</div>
-	<div  class = "dimg" id = "i6">
-	<img src = "img6.jpg" class = "imag" id = "img6"/>
-	</div>
-	<div  class = "dimg" id = "i7">
-	<img src = "img7.jpg" class = "imag" id = "img7"/>
-	</div>
-	<div  class = "dimg" id = "i8">
-	<img src = "img8.jpg" class = "imag" id = "img8"/>
-	</div>
-	<div class = "dimg" id = "i11">
-	<img src = "img11.jpg" class = "imag" id = "img11"/>
-  </div>
-	<div  id = "i">
-	<img src = "img12.jpg" class = "imag" id = "img12"/>
-  </div>
-</div>
-<script>
-var imgid = new Array();
-imgid[0] = document.getElementById('img4').src;
-imgid[1] = document.getElementById('img5').src;
-imgid[2] = document.getElementById('img6').src;
-imgid[3] = document.getElementById('img7').src;
-imgid[4] = document.getElementById('img8').src;
-imgid[5] = document.getElementById('img11').src;
-imgid[6] = document.getElementById('img12').src;
-</script>
+ <div class="divfoot" id="divfoot">
+ </div>
 </body>
 </html>
